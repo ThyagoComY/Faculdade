@@ -1,0 +1,11 @@
+nome = input("Digite seu nome completo: ")
+b1 = input("Digite a nota do primeiro bimestre: ")
+b2 = input("Digite a nota do segundo bimestre: ")
+b3 = input("Digite a nota do terceiro bimestre: ")
+b4 = input("Digite a nota do quarto bimestre: ")
+
+print("\nNome do Aluno: ", nome)
+print("Nota do primeiro bimestre: ", b1)
+print("Nota do segundo bimestre: ", b2)
+print("Nota do terceiro bimestre: ", b3)
+print("Nota do quarto bimestre: ", b4, "\n")
