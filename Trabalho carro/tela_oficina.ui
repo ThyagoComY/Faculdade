@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x><y>0</y><width>850</width><height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema Oficina Mecânica</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect><x>10</x><y>10</y><width>830</width><height>650</height></rect>
+    </property>
+    <property name="currentIndex"><number>0</number></property>
+
+    <!-- ABA CLIENTES -->
+    <widget class="QWidget" name="tab_clientes">
+     <attribute name="title"><string>Clientes</string></attribute>
+     <widget class="QLabel" name="lbl_cli_titulo">
+      <property name="geometry"><rect><x>300</x><y>20</y><width>200</width><height>30</height></rect></property>
+      <property name="font"><font><pointsize>14</pointsize><bold>true</bold></font></property>
+      <property name="text"><string>Cadastro de Clientes</string></property>
+     </widget>
+     <widget class="QLabel" name="lbl_cli_nome"><property name="geometry"><rect><x>30</x><y>80</y><width>70</width><height>20</height></rect></property><property name="text"><string>Nome:</string></property></widget>
+     <widget class="QLineEdit" name="txt_cli_nome"><property name="geometry"><rect><x>100</x><y>80</y><width>300</width><height>20</height></rect></property></widget>
+
+     <widget class="QLabel" name="lbl_cli_cpf"><property name="geometry"><rect><x>30</x><y>120</y><width>70</width><height>20</height></rect></property><property name="text"><string>CPF:</string></property></widget>
+     <widget class="QLineEdit" name="txt_cli_cpf"><property name="geometry"><rect><x>100</x><y>120</y><width>300</width><height>20</height></rect></property></widget>
+
+     <widget class="QLabel" name="lbl_cli_tel"><property name="geometry"><rect><x>30</x><y>160</y><width>70</width><height>20</height></rect></property><property name="text"><string>Telefone:</string></property></widget>
+     <widget class="QLineEdit" name="txt_cli_telefone"><property name="geometry"><rect><x>100</x><y>160</y><width>300</width><height>20</height></rect></property></widget>
+
+     <widget class="QPushButton" name="btn_cad_cliente"><property name="geometry"><rect><x>450</x><y>80</y><width>100</width><height>30</height></rect></property><property name="text"><string>CADASTRAR</string></property></widget>
+     <widget class="QPushButton" name="btn_lis_cliente"><property name="geometry"><rect><x>450</x><y>120</y><width>100</width><height>30</height></rect></property><property name="text"><string>LISTAR</string></property></widget>
+     <widget class="QPushButton" name="btn_exc_cliente"><property name="geometry"><rect><x>450</x><y>160</y><width>100</width><height>30</height></rect></property><property name="text"><string>EXCLUIR</string></property></widget>
+
+     <widget class="QTableWidget" name="tb_clientes"><property name="geometry"><rect><x>30</x><y>220</y><width>770</width><height>380</height></rect></property></widget>
+    </widget>
+
+    <!-- ABA CARROS -->
+    <widget class="QWidget" name="tab_carros">
+     <attribute name="title"><string>Carros</string></attribute>
+     <widget class="QLabel" name="lbl_car_titulo">
+      <property name="geometry"><rect><x>300</x><y>20</y><width>200</width><height>30</height></rect></property>
+      <property name="font"><font><pointsize>14</pointsize><bold>true</bold></font></property>
+      <property name="text"><string>Cadastro de Carros</string></property>
+     </widget>
+     <widget class="QLabel" name="lbl_car_marca"><property name="geometry"><rect><x>30</x><y>80</y><width>70</width><height>20</height></rect></property><property name="text"><string>Marca:</string></property></widget>
+     <widget class="QLineEdit" name="txt_car_marca"><property name="geometry"><rect><x>100</x><y>80</y><width>300</width><height>20</height></rect></property></widget>
+
+     <widget class="QLabel" name="lbl_car_mod"><property name="geometry"><rect><x>30</x><y>120</y><width>70</width><height>20</height></rect></property><property name="text"><string>Modelo:</string></property></widget>
+     <widget class="QLineEdit" name="txt_car_modelo"><property name="geometry"><rect><x>100</x><y>120</y><width>300</width><height>20</height></rect></property></widget>
+
+     <widget class="QLabel" name="lbl_car_placa"><property name="geometry"><rect><x>30</x><y>160</y><width>70</width><height>20</height></rect></property><property name="text"><string>Placa:</string></property></widget>
+     <widget class="QLineEdit" name="txt_car_placa"><property name="geometry"><rect><x>100</x><y>160</y><width>100</width><height>20</height></rect></property></widget>
+
+     <widget class="QLabel" name="lbl_car_cli"><property name="geometry"><rect><x>220</x><y>160</y><width>70</width><height>20</height></rect></property><property name="text"><string>ID Cliente:</string></property></widget>
+     <widget class="QLineEdit" name="txt_car_cli_id"><property name="geometry"><rect><x>300</x><y>160</y><width>100</width><height>20</height></rect></property></widget>
+
+     <widget class="QPushButton" name="btn_cad_carro"><property name="geometry"><rect><x>450</x><y>80</y><width>100</width><height>30</height></rect></property><property name="text"><string>CADASTRAR</string></property></widget>
+     <widget class="QPushButton" name="btn_lis_carro"><property name="geometry"><rect><x>450</x><y>120</y><width>100</width><height>30</height></rect></property><property name="text"><string>LISTAR</string></property></widget>
+     <widget class="QPushButton" name="btn_exc_carro"><property name="geometry"><rect><x>450</x><y>160</y><width>100</width><height>30</height></rect></property><property name="text"><string>EXCLUIR</string></property></widget>
+
+     <widget class="QTableWidget" name="tb_carros"><property name="geometry"><rect><x>30</x><y>220</y><width>770</width><height>380</height></rect></property></widget>
+    </widget>
+
+    <!-- ABA SERVIÇOS -->
+    <widget class="QWidget" name="tab_servicos">
+     <attribute name="title"><string>Serviços</string></attribute>
+     <widget class="QLabel" name="lbl_ser_titulo">
+      <property name="geometry"><rect><x>300</x><y>20</y><width>200</width><height>30</height></rect></property>
+      <property name="font"><font><pointsize>14</pointsize><bold>true</bold></font></property>
+      <property name="text"><string>Cadastro de Serviços</string></property>
+     </widget>
+     <widget class="QLabel" name="lbl_ser_nome"><property name="geometry"><rect><x>30</x><y>80</y><width>70</width><height>20</height></rect></property><property name="text"><string>Nome:</string></property></widget>
+     <widget class="QLineEdit" name="txt_ser_nome"><property name="geometry"><rect><x>100</x><y>80</y><width>300</width><height>20</height></rect></property></widget>
+
+     <widget class="QLabel" name="lbl_ser_desc"><property name="geometry"><rect><x>30</x><y>120</y><width>70</width><height>20</height></rect></property><property name="text"><string>Descrição:</string></property></widget>
+     <widget class="QLineEdit" name="txt_ser_desc"><property name="geometry"><rect><x>100</x><y>120</y><width>300</width><height>20</height></rect></property></widget>
+
+     <widget class="QLabel" name="lbl_ser_val"><property name="geometry"><rect><x>30</x><y>160</y><width>70</width><height>20</height></rect></property><property name="text"><string>Valor R$:</string></property></widget>
+     <widget class="QLineEdit" name="txt_ser_valor"><property name="geometry"><rect><x>100</x><y>160</y><width>300</width><height>20</height></rect></property></widget>
+
+     <widget class="QPushButton" name="btn_cad_servico"><property name="geometry"><rect><x>450</x><y>80</y><width>100</width><height>30</height></rect></property><property name="text"><string>CADASTRAR</string></property></widget>
+     <widget class="QPushButton" name="btn_lis_servico"><property name="geometry"><rect><x>450</x><y>120</y><width>100</width><height>30</height></rect></property><property name="text"><string>LISTAR</string></property></widget>
+     <widget class="QPushButton" name="btn_exc_servico"><property name="geometry"><rect><x>450</x><y>160</y><width>100</width><height>30</height></rect></property><property name="text"><string>EXCLUIR</string></property></widget>
+
+     <widget class="QTableWidget" name="tb_servicos"><property name="geometry"><rect><x>30</x><y>220</y><width>770</width><height>380</height></rect></property></widget>
+    </widget>
+
+    <!-- ABA ORDENS DE SERVIÇO -->
+    <widget class="QWidget" name="tab_os">
+     <attribute name="title"><string>Ordens de Serviço</string></attribute>
+     <widget class="QLabel" name="lbl_os_titulo">
+      <property name="geometry"><rect><x>250</x><y>20</y><width>300</width><height>30</height></rect></property>
+      <property name="font"><font><pointsize>14</pointsize><bold>true</bold></font></property>
+      <property name="text"><string>Cadastro de Ordens de Serviço</string></property>
+     </widget>
+     
+     <widget class="QLabel" name="lbl_os_data"><property name="geometry"><rect><x>30</x><y>80</y><width>70</width><height>20</height></rect></property><property name="text"><string>Data:</string></property></widget>
+     <widget class="QLineEdit" name="txt_os_data"><property name="geometry"><rect><x>100</x><y>80</y><width>120</width><height>20</height></rect></property></widget>
+
+     <widget class="QLabel" name="lbl_os_status"><property name="geometry"><rect><x>240</x><y>80</y><width>50</width><height>20</height></rect></property><property name="text"><string>Status:</string></property></widget>
+     <widget class="QLineEdit" name="txt_os_status"><property name="geometry"><rect><x>290</x><y>80</y><width>130</width><height>20</height></rect></property></widget>
+
+     <widget class="QLabel" name="lbl_os_cli"><property name="geometry"><rect><x>30</x><y>120</y><width>70</width><height>20</height></rect></property><property name="text"><string>ID Cliente:</string></property></widget>
+     <widget class="QLineEdit" name="txt_os_cli_id"><property name="geometry"><rect><x>100</x><y>120</y><width>120</width><height>20</height></rect></property></widget>
+
+     <widget class="QLabel" name="lbl_os_carro"><property name="geometry"><rect><x>230</x><y>120</y><width>60</width><height>20</height></rect></property><property name="text"><string>ID Carro:</string></property></widget>
+     <widget class="QLineEdit" name="txt_os_carro_id"><property name="geometry"><rect><x>290</x><y>120</y><width>130</width><height>20</height></rect></property></widget>
+
+     <widget class="QLabel" name="lbl_os_val"><property name="geometry"><rect><x>30</x><y>160</y><width>70</width><height>20</height></rect></property><property name="text"><string>Valor R$:</string></property></widget>
+     <widget class="QLineEdit" name="txt_os_valor"><property name="geometry"><rect><x>100</x><y>160</y><width>120</width><height>20</height></rect></property></widget>
+
+     <widget class="QPushButton" name="btn_cad_os"><property name="geometry"><rect><x>450</x><y>80</y><width>100</width><height>30</height></rect></property><property name="text"><string>CADASTRAR</string></property></widget>
+     <widget class="QPushButton" name="btn_lis_os"><property name="geometry"><rect><x>450</x><y>120</y><width>100</width><height>30</height></rect></property><property name="text"><string>LISTAR</string></property></widget>
+     <widget class="QPushButton" name="btn_exc_os"><property name="geometry"><rect><x>450</x><y>160</y><width>100</width><height>30</height></rect></property><property name="text"><string>EXCLUIR</string></property></widget>
+
+     <widget class="QTableWidget" name="tb_os"><property name="geometry"><rect><x>30</x><y>220</y><width>770</width><height>380</height></rect></property></widget>
+    </widget>
+
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
